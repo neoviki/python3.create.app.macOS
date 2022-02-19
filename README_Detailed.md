@@ -48,9 +48,14 @@ cd source_code
 ls /System/Library/Frameworks/Tk.framework/Tk
 ls /System/Library/Frameworks/Tcl.framework/Tcl
 
+
+## Make sure pyinstaller is located at
+    
+    /Users/viki/Library/Python/3.10/bin/pyinstaller
+
 ## Build Application
 
-pyinstaller  --noconsole --add-binary='/System/Library/Frameworks/Tk.framework/Tk':'tk' --add-binary='/System/Library/Frameworks/Tcl.framework/Tcl':'tcl' --windowed myapp.py
+/Users/viki/Library/Python/3.10/bin/pyinstaller   --noconsole --add-binary='/System/Library/Frameworks/Tk.framework/Tk':'tk' --add-binary='/System/Library/Frameworks/Tcl.framework/Tcl':'tcl' --windowed myapp.py
 
 
 --------------------------------------------------
